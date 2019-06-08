@@ -1,5 +1,8 @@
 
-var wordArray = ['Friends','Suits','TheWire','GameOfThrones','TheOffice','BreakingBad']; 
+var wordArray = ['Friends','Suits','GameOfThrones','TheOffice','BreakingBad']; 
+
+
+
 
 var currentWord;
 var blanks = [];
@@ -34,6 +37,11 @@ function newGame(){
         }
     guesses = 12;
 
+   
+document.getElementById("left").innerHTML = "<img src=\"assets\\images\\" + currentWord.length + '.jpg"  height="200px" width="300px"/>';
+   
+   
+   
     guessesText.textContent = "Guesses: " + guesses;
     winsText.textContent = "Wins: "+ wins;
     lossesText.textContent="Losses: "+losses;
